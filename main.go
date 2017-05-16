@@ -43,14 +43,7 @@ func main() {
 			hash[e] += 1
 		}
 
-		digit := 0
-		j := i
-		for j > 0 {
-			j = j / 10
-			digit += 1
-		}
-
-		if len(hash) >= digit {
+		if len(hash) >= len(s) {
 			fmt.Printf("%d ", i)
 			count += 1
 
